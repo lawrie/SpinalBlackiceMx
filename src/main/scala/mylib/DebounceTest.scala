@@ -6,13 +6,13 @@ import spinal.lib._
 class DebounceTest(width:Int = 15) extends Component {
   val io = new Bundle {
     val button1 = in Bool
-    val leds = out UInt(2 bits)
+    val leds = out UInt(3 bits)
   }
 
   val debounce = new Debounce(width)
   debounce.io.pb := io.button1
   
-  val leds = Reg(UInt(2 bits))
+  val leds = Reg(UInt(3 bits))
   io.leds := ~leds // LEDs on on when low
 
   when (debounce.io.pbDown) {
