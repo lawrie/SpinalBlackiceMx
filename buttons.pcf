@@ -1,0 +1,8 @@
+set_io -nowarn -pullup yes io_button1 49
+set_io -nowarn -pullup yes io_button2  52
+
+set_io -nowarn io_leds[0] 55
+set_io -nowarn io_leds[1] 56
+
+set_io -nowarn clk 60
+
