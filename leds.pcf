@@ -1,0 +1,5 @@
+set_io -nowarn io_blueLed 49
+set_io -nowarn io_greeLed 52
+set_io -nowarn io_yellowLed 55
+set_io -nowarn io_redLed 56
+
